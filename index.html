@@ -1,0 +1,710 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BootStrap website</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .navbar-nav > li > a {
+        color: #fff !important;
+      }
+      #carouselExampleDark {
+        height: 790px;
+      }
+
+      #carouselExampleDark .carousel-inner {
+        height: 100%;
+      }
+
+      #carouselExampleDark .carousel-item {
+        height: 100%;
+      }
+
+      #carouselExampleDark img {
+        object-fit: fill;
+        height: 100%;
+        width: 100%;
+      }
+
+      .card-img-full {
+        height: 450px;
+      }
+
+      /* Add a parallax effect to the background image */
+      .parallax-section {
+        position: relative;
+        background-image: url("./images/2.jpg"); /* Replace with the path to your image */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 500px; /* Set the desired height of the parallax section */
+        color: #ffffff; /* Set the text color for better visibility */
+        text-align: center;
+        padding-top: 100px; /* Adjust top padding to center content vertically */
+      }
+
+
+      .custom-carousel-caption {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90% !important;
+            height: 190px;
+            max-width: 900px; /* Adjust max-width as needed */
+            background-color: rgba(88, 86, 83, 0.5); /* Background color with opacity */
+            color: rgb(13, 12, 12);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 2rem;
+        }
+    </style>
+  </head>
+  <body>
+    <header style="background-color: #6e6f68">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success bg-white" type="submit">
+                Search
+              </button>
+            </form>
+
+            <form class="d-flex" role="search">
+              <button class="btn btn-outline-success bg-white" type="submit">
+                Login
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div id="carouselExampleDark" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./images/1.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption  custom-carousel-caption">
+              <div class="rounded border border-4 border-bb2222 bg-ff0000-50 text-white p-4">
+                <h3>First slide label</h3>
+                <p>Some representative placeholder content for the first slide.</p>
+            </div>
+            
+            
+
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./images/2.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption w-90px h-80px d-none d-md-block  custom-carousel-caption">
+              <div class="rounded border border-4 border-bb2222 bg-ff0000-50 text-white p-4">
+              <h3>Second slide label</h3>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/3.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption w-90px h-80px d-none d-md-block  custom-carousel-caption">
+              <div class="rounded border border-4 border-bb2222 bg-ff0000-50 text-white p-4">
+              <h3>Third slide label</h3>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section id="cities">
+      <div class="container text-center">
+        <div class="row align-items-center justify-content-center my-4">
+          <div class="col-4 my-4">
+            <div class="card">
+              <img src="./images/2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body ">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 my-4">
+            <div class="card">
+              <img src="./images/2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 my-4">
+            <div class="card">
+              <img src="./images/2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 my-4">
+            <div class="card" >
+              <img src="./images/2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 my-4">
+            <div class="card" >
+              <img src="./images/2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 my-4">
+            <div class="card">
+              <img src="./images/2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4 my-4">
+            <div class="card" >
+              <img src="./images/2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 my-4">
+            <div class="card">
+              <img src="./images/2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="parallax-section">
+        <div class="container  text-white  custom-carousel-caption  ">
+          <div class="py-10">
+
+            <h1>Your Content Goes Here</h1>
+          <p>Additional content or sections can be added here.</p>
+
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="staff">
+      <div class="container text-center">
+        <div class="row justify-content-center my-4">
+          <div class="col-4 my-4" >
+            <div class="card" style="height: 450px; width: 416px;">
+              <img src="./images/3.jpg" class="card-img-full" alt="..." />
+              <div class="card-img-overlay ">
+                <div class="rounded border border-4 border-bb2222 bg-info bg-gradient bg-opacity-25 p-4" style="margin-top: 60%;">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural
+                    lead-in to additional content. This content is a little bit
+                    longer.
+                  </p>
+
+                
+
+                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 my-4">
+            <div class="card" style="height: 450px; width: 416px">
+              <img src="./images/3.jpg" class="card-img-full" alt="..." />
+              <div class="card-img-overlay">
+                <div class="rounded border border-4 border-bb2222 bg-info bg-gradient bg-opacity-25 p-4" style="margin-top: 60%;">
+
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 my-4">
+            <div class="card" style="height: 450px; width: 416px">
+              <img src="./images/3.jpg" class="card-img-full" alt="..." />
+              <div class="card-img-overlay">
+                <div class="rounded border border-4 border-bb2222 bg-info bg-gradient bg-opacity-25 p-4" style="margin-top: 60%;">
+
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text"><small>Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="postcard-section">
+      <div class="projcard-container">
+        <div class="projcard projcard-blue">
+          <div class="projcard-innerbox">
+            <img
+              class="projcard-img"
+              src="https://picsum.photos/800/600?image=1041"
+            />
+            <div class="projcard-textbox">
+              <div class="projcard-title">Card Title</div>
+              <div class="projcard-subtitle">
+                This explains the card in more detail
+              </div>
+              <div class="projcard-bar"></div>
+              <div class="projcard-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </div>
+              <div class="projcard-tagbox">
+                <span class="projcard-tag">HTML</span>
+                <span class="projcard-tag">CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projcard projcard-red">
+          <div class="projcard-innerbox">
+            <img
+              class="projcard-img"
+              src="https://picsum.photos/800/600?image=1080"
+            />
+            <div class="projcard-textbox">
+              <div class="projcard-title">That's Another Card</div>
+              <div class="projcard-subtitle">
+                I don't really think that I need to explain anything here
+              </div>
+              <div class="projcard-bar"></div>
+              <div class="projcard-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+              <div class="projcard-tagbox">
+                <span class="projcard-tag">PHP</span>
+                <span class="projcard-tag">SQL</span>
+                <span class="projcard-tag">Database</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="projcard projcard-green">
+          <div class="projcard-innerbox">
+            <img
+              class="projcard-img"
+              src="https://picsum.photos/800/600?image=1039"
+            />
+            <div class="projcard-textbox">
+              <div class="projcard-title">And a Third Card</div>
+              <div class="projcard-subtitle">You know what this is by now</div>
+              <div class="projcard-bar"></div>
+              <div class="projcard-description">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident.
+              </div>
+              <div class="projcard-tagbox">
+                <span class="projcard-tag">Excel</span>
+                <span class="projcard-tag">VBA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="projcard projcard-customcolor"
+          style="--projcard-color: #f5af41"
+        >
+          <div class="projcard-innerbox">
+            <img
+              class="projcard-img"
+              src="https://picsum.photos/800/600?image=943"
+            />
+            <div class="projcard-textbox">
+              <div class="projcard-title">Last Card</div>
+              <div class="projcard-subtitle">
+                That's the last one. Have a nice day!
+              </div>
+              <div class="projcard-bar"></div>
+              <div class="projcard-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </div>
+              <div class="projcard-tagbox">
+                <span class="projcard-tag">iOS</span>
+                <span class="projcard-tag">Android</span>
+                <span class="projcard-tag">Cordova</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #6e6f68"
+    >
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">FOOTER CONTENT</h5>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestiae modi cum ipsam ad, illo possimus laborum ut reiciendis
+                obcaecati. Ducimus, quas. Corrupti, pariatur eaque? Reiciendis
+                assumenda iusto sapiente inventore animi?
+              </p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 4</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 4</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 4</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-white">Link 1</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 2</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 3</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-white">Link 4</a>
+                </li>
+              </ul>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+
+        <hr class="mb-4" />
+
+        <!-- Section: CTA -->
+        <section class="">
+          <p class="d-flex justify-content-center align-items-center">
+            <span class="me-3">Register for free</span>
+            <button type="button" class="btn btn-outline-light btn-rounded">
+              Sign up!
+            </button>
+          </p>
+        </section>
+        <!-- Section: CTA -->
+
+        <hr class="mb-4" />
+
+        <!-- Section: Social media -->
+        <section class="mb-4 text-center">
+          <!-- Facebook -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
+
+          <!-- Google -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-google"></i
+          ></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="#!"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2023 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">Feras</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </body>
+</html>
