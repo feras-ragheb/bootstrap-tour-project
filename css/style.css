@@ -197,3 +197,69 @@
     right: -10px;
     top: 0;
   }
+
+
+
+
+  
+
+  /****************************************************************/
+
+  .navbar-nav > li > a {
+    color: #fff !important;
+  }
+  #carouselExampleDark {
+    height: 790px;
+  }
+
+  #carouselExampleDark .carousel-inner {
+    height: 100%;
+  }
+
+  #carouselExampleDark .carousel-item {
+    height: 100%;
+  }
+
+  #carouselExampleDark img {
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+  }
+
+  .card-img-full {
+    height: 450px;
+  }
+
+  /* Add a parallax effect to the background image */
+  .parallax-section {
+    position: relative;
+    background-image: url("../images/2.jpg"); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px; /* Set the desired height of the parallax section */
+    color: #ffffff; /* Set the text color for better visibility */
+    text-align: center;
+    padding-top: 100px; /* Adjust top padding to center content vertically */
+  }
+
+
+  .custom-carousel-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90% !important;
+        height: 255px;
+        max-width: 900px; /* Adjust max-width as needed */
+        background-color: rgba(88, 86, 83, 0.5); /* Background color with opacity */
+        color: rgb(13, 12, 12);
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 2rem;
+    }
+
+    
+.navbar-nav .nav-item {
+  margin-right: 30px;
+}
